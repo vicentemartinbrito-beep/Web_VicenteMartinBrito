@@ -179,6 +179,17 @@
             margin: auto;
         }
 
+        .video{
+            width: 90%;
+            margin: 10px;
+            box-shadow: 0 7px 16px rgb(36, 35, 34);
+            border-radius: 5px;
+            background-color: rgba(239, 205, 154, 0.7);
+            text-shadow: 5px 5px 6px rgb(190, 152, 94);
+            box-sizing: border-box;
+        
+        }
+
 
         footer {
             grid-area: footer;
@@ -419,5 +430,9 @@
 
             .invocacion:last-child {
                 border-bottom: none;
+            }
+
+            .video {
+                width: 90%;
             }
         }
