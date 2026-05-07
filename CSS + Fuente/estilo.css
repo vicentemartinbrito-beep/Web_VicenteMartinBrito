@@ -292,24 +292,24 @@
             flex-shrink: 0;
         }
 
-        main table {
-            width: 90%;
-            border-collapse: collapse;
-            margin: 10px;
-        }
+        .tabla-objetos {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 10px;
+}
 
-        main td {
-            padding: 10px;
-            vertical-align: middle;
-            box-shadow: 0 7px 16px rgb(36, 35, 34);
-            background-color: rgba(239, 205, 154, 0.7);
-            text-shadow: 5px 5px 6px rgb(190, 152, 94);
-        }
+.tabla-objetos td {
+    padding: 10px;
+    vertical-align: middle;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    background-color: rgba(239, 205, 154, 0.7);
+    text-shadow: 5px 5px 6px rgb(190, 152, 94);
+}
 
-        main td img {
-            width: 90px;
-            height: auto;
-
+.tabla-objetos td img {
+    width: 90px;
+    height: auto;
+}
 
         }
 
