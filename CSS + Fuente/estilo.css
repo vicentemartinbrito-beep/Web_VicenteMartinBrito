@@ -293,28 +293,24 @@
         }
 
         .tabla-objetos {
-    
-    border-collapse: collapse;
-    margin: 10px;
-width: 100%;
-    max-width: 100%;
-    table-layout: fixed
-}
+            width: 90%;
+            border-collapse: collapse;
+            margin: 10px;
+            max-width: 100%;
+            table-layout: fixed;
+        }
 
+        .tabla-objetos td {
+            padding: 10px;
+            vertical-align: middle;
+            box-shadow: 0 7px 16px rgb(36, 35, 34);
+            background-color: rgba(239, 205, 154, 0.7);
+            text-shadow: 5px 5px 6px rgb(190, 152, 94);
+        }
 
-.tabla-objetos td {
-    padding: 10px;
-    vertical-align: middle;
-    box-shadow: 0 7px 16px rgb(36, 35, 34);
-    background-color: rgba(239, 205, 154, 0.7);
-    text-shadow: 5px 5px 6px rgb(190, 152, 94);
-}
-
-.tabla-objetos td img {
-    width: 90px;
-    height: auto;
-}
-
+        .tabla-objetos td img {
+            width: 90px;
+            height: auto;
         }
 
         .invocacion {
@@ -487,4 +483,24 @@ width: 100%;
                 align-items: center;
                 padding: 0px;
             }
+
+            .tabla-objetos tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+                border-bottom: 2px solid rgb(167, 113, 32);
+            }
+
+            .tabla-objetos td {
+                width: 100%;
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .tabla-objetos td img {
+                width: 80px;
+            }
+
+
         }
