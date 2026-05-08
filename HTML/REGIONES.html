@@ -42,7 +42,19 @@
                     olvidada.</p>
                 <p><b>Farum Azula:</b> Una fortaleza en ruinas suspendida entre tormentas eternas.</p>
             </div>
-            <img src="../IMG/map2.webp" alt="Mapa de las Tierras Intermedias">
+            <div class="galeria-regiones">
+                <button name="botonAnt" id="anterior">&#8592;</button>
+                <img class="img" src="../IMG/map2.webp" alt="Mapa de las Tierras Intermedias">
+                <img class="img" src="../IMG/necrolimbo.jpg" alt="necrolimbo">
+                <img class="img" src="../IMG/Liurnia.jpg" alt="liurnia">
+                <img class="img" src="../IMG/Caelid.png" alt="caelid">
+                <img class="img" src="../IMG/Altus.webp" alt="altus">
+                <img class="img" src="../IMG/gigantes.jpg" alt="montaña de los gigantes">
+                <img class="img" src="../IMG/nokron.webp" alt="nokron">
+                <img class="img" src="../IMG/Farum.jpg" alt="farum azula">
+                <button name="botonSig" id="siguiente">&#8594;</button>
+            </div>
+
         </main>
 
         <aside>
@@ -209,6 +221,36 @@
         }
 
         actualizarReloj();
+
+
+        let cargar = document.getElementsByClassName("img");
+
+
+        let indice = 0;
+
+        for (let i = 0; i < cargar.length; i++) {
+            cargar[i].style.display = "none";
+        }
+
+        cargar[indice].style.display = "";
+
+        document.getElementById("anterior").addEventListener("click", function () {
+            cargar[indice].style.display = "none";
+            indice--;
+            if (indice < 0) {
+                indice = cargar.length - 1;
+            }
+            cargar[indice].style.display = "";
+        });
+
+        document.getElementById("siguiente").addEventListener("click", function () {
+            cargar[indice].style.display = "none";
+            indice++;
+            if (indice >= cargar.length) {
+                indice = 0;
+            }
+            cargar[indice].style.display = "";
+        });
     </script>
 </body>
 

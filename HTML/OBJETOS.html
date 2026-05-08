@@ -67,7 +67,11 @@
                     arma. Búscalas por todas las Tierras Intermedias."</p>
             </div>
             <div>
-                <img src="../IMG/ashe.png" alt="Cenizas de Guerra">
+                <img class="ceniza" src="../IMG/ashe.png" alt="Cenizas de Guerra">
+                <img class="ceniza" src="../IMG/ashe2.png" alt="Cenizas de Guerra">
+                <img class="ceniza" src="../IMG/ashe3.png" alt="Cenizas de Guerra">
+                <img class="ceniza" src="../IMG/ashe4.png" alt="Cenizas de Guerra">
+                <img class="ceniza" src="../IMG/ashe5.png" alt="Cenizas de Guerra">
             </div>
         </aside>
 
@@ -225,6 +229,40 @@
         }
 
         actualizarReloj();
+
+
+        let cargar = document.getElementsByClassName("ceniza");
+
+
+        let indice = 0;
+
+
+        for (let i = 0; i < cargar.length; i++) {
+            cargar[i].style.display = "none";
+        }
+
+        cargar[indice].style.display = "";
+
+        function pasarImagenes() {
+
+            for (let i = 0; i < cargar.length; i++) {
+
+                cargar[i].style.display = "none";
+
+            }
+            indice++;
+            if (indice >= cargar.length) {
+                indice = 0;
+
+            }
+            cargar[indice].style.display = "";
+
+            
+        }
+
+        setInterval(pasarImagenes, 3000); 
+        
+
     </script>
 </body>
 
