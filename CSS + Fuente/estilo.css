@@ -158,6 +158,7 @@
             background-image: url('../IMG/heres-the-4k-version-of-the-logo-if-anyone-wants-to-use-it-v0-e8u661wb0gx71.webp');
             background-size: cover;
             background-position: center;
+
         }
 
         main p {
@@ -173,7 +174,7 @@
             box-sizing: border-box;
         }
 
-        main img {
+        main>img {
             width: 50%;
             max-width: 700px;
             margin: auto;
@@ -486,6 +487,13 @@
 
         .Pinformacion button:hover {
             box-shadow: 0 7px 16px rgb(167, 113, 32);
+        }
+
+        .nombre-grande {
+            font-size: 2em;
+            color: white;
+            text-shadow: 3px 3px 6px black;
+            flex: 1;
         }
 
         @media (max-width: 768px) {

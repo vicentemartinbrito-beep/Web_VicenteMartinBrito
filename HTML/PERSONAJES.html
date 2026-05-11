@@ -31,21 +31,23 @@
             <div class="personaje">
                 <img src="../IMG/melina.png" alt="Melina">
                 <div class="Pinformacion">
-                    <b>Melina:</b>
                     <button onclick="mostrarInfo('melina', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-melina">Melina</span>
                     <p class="descripcion" id="melina"><b>Melina:</b> Una misteriosa joven que aparece ante el Sinluz al
                         comienzo de su viaje.
-                        Actúa como guía y aliada, ofreciendo subir de nivel a cambio de Runas en los Lugares de Gracia.
-                        Su origen y verdadera naturaleza permanecen envueltos en secreto, aunque está íntimamente ligada
+                        Actúa como guía y aliada, ofreciendo subir de nivel a cambio de Runas en los Lugares de
+                        Gracia.
+                        Su origen y verdadera naturaleza permanecen envueltos en secreto, aunque está íntimamente
+                        ligada
                         a la voluntad de Marika y al destino de las Tierras Intermedias.</p>
                 </div>
             </div>
             <div class="personaje">
                 <img src="../IMG/ranni.webp" alt="Ranni">
                 <div class="Pinformacion">
-                    <b>Ranni la Bruja:</b>
                     <button onclick="mostrarInfo('ranni', this)">Ver más</button>
-                    <p class="descripcion" id="ranni"><b>Ranni la Bruja:</b> Una semidiosa de apariencia etérea que
+                    <span class="nombre-grande" id="nombre-ranni">Ranni la Bruja</span>
+                    <p class="descripcion" id="ranni"><b>Ranni: </b>Una semidiosa de apariencia etérea que
                         abandonó su cuerpo mortal
                         por voluntad propia. Ranni busca liberarse del influjo del Elden Ring y trazar su propio destino
                         alejado de los dioses. Ofrece al Sinluz uno de los caminos más elaborados, con una larga cadena
@@ -55,98 +57,99 @@
             <div class="personaje">
                 <img src="../IMG/radagon.jpg" alt="Radagon">
                 <div class="Pinformacion">
-                    <b>Radagon de la Luna Dorada:</b>
                     <button onclick="mostrarInfo('radagon', this)">Ver más</button>
-                    <p class="descripcion" id="radagon"><b>Radagon de la Luna Dorada:</b> Esposo de la Reina Marika y él
+                    <span class="nombre-grande" id="nombre-radagon">Radagon de la Luna Dorada</span>
+                    <p class="descripcion" id="radagon"><b>Radagon: </b>Esposo de la Reina Marika y él
                         mismo una extensión de
                         su ser. Radagon dedicó su vida a intentar reparar el Elden Ring tras su fractura. Su verdadera
                         naturaleza, inseparable de Marika, es uno de los mayores misterios de las Tierras Intermedias y
                         se revela en el tramo final del enfrentamiento final.</p>
                 </div>
             </div>
-    
-    <div class="personaje">
-        <img src="../IMG/General_Radahn.jpg" alt="Radahn">
-        <div class="Pinformacion">
-            <b>Radahn:</b>
-            <button onclick="mostrarInfo('radahn', this)">Ver más</button>
-            <p class="descripcion" id="radahn"><b>Radahn:</b> Semidios y general legendario de las Tierras Intermedias,
-                conocido por ser el guerrero más poderoso de su era. Dominaba la gravedad con su magia y era tan
-                grande que solo su caballo Leonard, encogido con hechizos, podía cargarlo. Una maldición lo
-                redujo a un estado salvaje, pero su figura permanece como una de las más imponentes de toda la
-                historia de las Tierras Intermedias.</p>
-        </div>
-    </div>
-    </main>
+
+            <div class="personaje">
+                <img src="../IMG/General_Radahn.jpg" alt="Radahn">
+                <div class="Pinformacion">
+                    <span class="nombre-grande" id="nombre-radahn">Radahn</span>
+                    <button onclick="mostrarInfo('radahn', this)">Ver más</button>
+                    <p class="descripcion" id="radahn"><b>Radahn: </b>Semidios y general legendario de las Tierras Intermedias,
+                        conocido por ser el guerrero más poderoso de su era. Dominaba la gravedad con su magia y era tan
+                        grande que solo su caballo Leonard, encogido con hechizos, podía cargarlo. Una maldición lo
+                        redujo a un estado salvaje, pero su figura permanece como una de las más imponentes de toda la
+                        historia de las Tierras Intermedias.</p>
+                </div>
+            </div>
+
+        </main>
 
 
-    <aside>
-        <div>
-            <h2>- Las Invasiones -</h2>
-            <p>"En las Tierras Intermedias, no estás solo. Otros Sinluz caídos pueden irrumpir en tu mundo para
-                arrebatarte tus Runas. Mantente alerta: la traición acecha en cada Lugar de Gracia."</p>
-        </div>
-        <div>
-            <img src="../IMG/Tarnished_render_4_by_ssundpool_dfssu5m-pre.webp" alt="Invasor de Elden Ring">
-        </div>
-    </aside>
+        <aside>
+            <div>
+                <h2>- Las Invasiones -</h2>
+                <p>"En las Tierras Intermedias, no estás solo. Otros Sinluz caídos pueden irrumpir en tu mundo para
+                    arrebatarte tus Runas. Mantente alerta: la traición acecha en cada Lugar de Gracia."</p>
+            </div>
+            <div>
+                <img src="../IMG/Tarnished_render_4_by_ssundpool_dfssu5m-pre.webp" alt="Invasor de Elden Ring">
+            </div>
+        </aside>
 
-    <aside class="aside2">
-        <div>
-            <h2>- Crea tu Sinluz -</h2>
-            <form>
-                <fieldset>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="Nombre" required>
+        <aside class="aside2">
+            <div>
+                <h2>- Crea tu Sinluz -</h2>
+                <form>
+                    <fieldset>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" required>
 
-                    <label for="class">Clase:</label>
-                    <select id="class" name="Clase">
-                        <option value="vagante">Vagante</option>
-                        <option value="samurai">Samurai</option>
-                        <option value="guerrero">Guerrero</option>
-                        <option value="heroe">Héroe</option>
-                        <option value="astrologo">Astrólogo</option>
-                        <option value="prisionero">Prisionero</option>
-                        <option value="profeta">Profeta</option>
-                        <option value="confesor">Confesor</option>
-                        <option value="bandido">Bandido</option>
-                        <option value="miserable">Miserable</option>
-                    </select>
+                        <label for="class">Clase:</label>
+                        <select id="class" name="Clase">
+                            <option value="vagante">Vagante</option>
+                            <option value="samurai">Samurai</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="heroe">Héroe</option>
+                            <option value="astrologo">Astrólogo</option>
+                            <option value="prisionero">Prisionero</option>
+                            <option value="profeta">Profeta</option>
+                            <option value="confesor">Confesor</option>
+                            <option value="bandido">Bandido</option>
+                            <option value="miserable">Miserable</option>
+                        </select>
 
-                    <label for="recuerdo">Recuerdo:</label>
-                    <select id="recuerdo" name="Recuerdo">
-                        <option value="Semilla">Semilla dorada</option>
-                        <option value="Cenizas">Cenizas de Diablo</option>
-                        <option value="Medallon">Medallón de ámbar</option>
-                        <option value="Apendice">Apéndice de tierras</option>
-                        <option value="Rama">Rama cautivadora</option>
-                        <option value="Tarro">Tarro agrietado</option>
-                        <option value="Llave">Llave de espada pétrea</option>
-                        <option value="Bendicion">Bendición</option>
-                        <option value="Nada" selected>Sin regalo</option>
-                    </select>
+                        <label for="recuerdo">Recuerdo:</label>
+                        <select id="recuerdo" name="Recuerdo">
+                            <option value="Semilla">Semilla dorada</option>
+                            <option value="Cenizas">Cenizas de Diablo</option>
+                            <option value="Medallon">Medallón de ámbar</option>
+                            <option value="Apendice">Apéndice de tierras</option>
+                            <option value="Rama">Rama cautivadora</option>
+                            <option value="Tarro">Tarro agrietado</option>
+                            <option value="Llave">Llave de espada pétrea</option>
+                            <option value="Bendicion">Bendición</option>
+                            <option value="Nada" selected>Sin regalo</option>
+                        </select>
 
-                    <input type="button" id="crear" value="Crear Sinluz">
+                        <input type="button" id="crear" value="Crear Sinluz">
 
-                    <div id="resultado-clase"></div>
-                </fieldset>
-            </form>
-        </div>
-    </aside>
+                        <div id="resultado-clase"></div>
+                    </fieldset>
+                </form>
+            </div>
+        </aside>
 
-    <footer>
-        <h3 id="visitas">Visitas a la web: </h3>
-        <div class="Creditos">
-            <h3>Vicente Martín Brito</h3>
-        </div>
+        <footer>
+            <h3 id="visitas">Visitas a la web: </h3>
+            <div class="Creditos">
+                <h3>Vicente Martín Brito</h3>
+            </div>
 
-        <div class="reloj">
+            <div class="reloj">
 
-            <label for="relojL">Hora actual:</label>
-            <label id="reloj"></label>
+                <label for="relojL">Hora actual:</label>
+                <label id="reloj"></label>
 
-        </div>
-    </footer>
+            </div>
+        </footer>
 
     </div>
 
@@ -248,6 +251,7 @@
 
 
         let descripciones = document.getElementsByClassName("descripcion");
+        let nombresGrandes = document.getElementsByClassName("nombre-grande");
 
         for (let i = 0; i < descripciones.length; i++) {
             descripciones[i].style.display = "none";
@@ -255,11 +259,14 @@
 
         function mostrarInfo(id, boton) {
             let descripcion = document.getElementById(id);
+            let nombreGrande = document.getElementById("nombre-" + id);
             if (descripcion.style.display === "none") {
                 descripcion.style.display = "";
+                nombreGrande.style.display = "none";
                 boton.innerHTML = "Ver menos";
             } else {
                 descripcion.style.display = "none";
+                nombreGrande.style.display = "";
                 boton.innerHTML = "Ver más";
             }
         }
